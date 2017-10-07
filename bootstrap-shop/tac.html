@@ -30,78 +30,75 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
 	<style type="text/css" id="enject"></style>
+		<link rel="stylesheet" type="text/css" href="mystyling.css">
+		<script src="https://use.fontawesome.com/3a82a51b6b.js"></script>
   </head>
 <body>
-<div id="header">
-<div class="container">
-<div id="welcomeLine" class="row">
-	<div class="span6">Welcome!<strong> User</strong></div>
-	<div class="span6">
-	<div class="pull-right">
-		<a href="product_summary.html"><span class="">Fr</span></a>
-		<a href="product_summary.html"><span class="">Es</span></a>
-		<span class="btn btn-mini">En</span>
-		<a href="product_summary.html"><span>&pound;</span></a>
-		<span class="btn btn-mini">$155.00</span>
-		<a href="product_summary.html"><span class="">$</span></a>
-		<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Itemes in your cart </span> </a> 
-	</div>
-	</div>
-</div>
 <!-- Navbar ================================================== -->
 <div id="logoArea" class="navbar">
-<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-</a>
-  <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
-		<form class="form-inline navbar-search" method="post" action="products.html" >
-		<input id="srchFld" class="srchTxt" type="text" />
-		  <select class="srchTxt">
-			<option>All</option>
-			<option>CLOTHES </option>
-			<option>FOOD AND BEVERAGES </option>
-			<option>HEALTH & BEAUTY </option>
-			<option>SPORTS & LEISURE </option>
-			<option>BOOKS & ENTERTAINMENTS </option>
-		</select> 
-		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
-    </form>
-    <ul id="topMenu" class="nav pull-right">
-	 <li class=""><a href="special_offer.html">Specials Offer</a></li>
-	 <li class=""><a href="normal.html">Delivery</a></li>
-	 <li class=""><a href="contact.html">Contact</a></li>
-	 <li class="">
-	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
-	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3>Login Block</h3>
-		  </div>
-		  <div class="modal-body">
-			<form class="form-horizontal loginFrm">
-			  <div class="control-group">								
-				<input type="text" id="inputEmail" placeholder="Email">
-			  </div>
-			  <div class="control-group">
-				<input type="password" id="inputPassword" placeholder="Password">
-			  </div>
-			  <div class="control-group">
-				<label class="checkbox">
-				<input type="checkbox"> Remember me
-				</label>
-			  </div>
-			</form>		
-			<button type="submit" class="btn btn-success">Sign in</button>
-			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		  </div>
+			<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div class="navbar-inner navbar-fixed-top">
+				<a class="brand" href="index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  ComputaMart</a>
+				<ul id="topMenu" class="nav pull-left">
+					<li class=""><a href="special_offer.html">Specials Offers</a></li>
+					<li class=""><a href="normal.html">Testimonials</a></li>
+					<li class=""><a href="contact.html">Contact Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Desktops</a></li>
+							<li><a href="#">Laptops</a></li>
+							<li><a href="#">Custom PC</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Storage Devices</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">More Items</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="topMenu" class="nav pull-right">
+
+					<li>
+						<a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
+						<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3>Login Block</h3>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal loginFrm">
+									<div class="control-group">								
+										<input type="text" id="inputEmail" placeholder="Email">
+									</div>
+									<div class="control-group">
+										<input type="password" id="inputPassword" placeholder="Password">
+									</div>
+									<div class="control-group">
+										<label class="checkbox">
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</form>		
+								<button type="submit" class="btn btn-success">Sign in</button>
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+							</div>
+						</div>
+					</li>
+					<li>
+
+						<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Your Cart</span> </a> 
+
+					</li>
+					>
+				</ul>
+			</ul>
+
+		</div>
 	</div>
-	</li>
-    </ul>
-  </div>
-</div>
 </div>
 </div>
 <!-- Header End====================================================================== -->
@@ -110,65 +107,78 @@
 	<div class="row">
 <!-- Sidebar ================================================== -->
 	<div id="sidebar" class="span3">
-		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="themes/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
-		<ul id="sideManu" class="nav nav-tabs nav-stacked">
-			<li class="subMenu open"><a> ELECTRONICS [230]</a>
-				<ul>
-				<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+
+				<ul id="sideManu" class="nav nav-tabs nav-stacked">
+					<li class="subMenu open"><a> Desktops [40]</a>
+						<ul>
+							<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Intel Processor Powered (100) </a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Amd Processor Powered (30)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Gaming Configuration (80)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Design Your Custom Pc</a></li>
+						</ul>
+					</li>
+					<li class="subMenu"><a> Processors [50] </a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A9-9410  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-8700P  (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-9600P(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A12-9700P  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-6100U(6)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-7100U  (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i5-6200U  (3)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Storage Devices [100]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Punch card(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Floppy diskette(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Zip disk (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>CD(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>DVD (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Blu-ray disc (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Flash jump drive (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Hard drive / SSD (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Keyboards And Mouse [30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTY(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AZERTY(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTZ (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>HCESAR(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Mouse(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>GStick Mouse (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Optical Mouse (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Trackball Mouse (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Speakers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Full-range drivers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subwoofer(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Woofer(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Mid-range driver(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Tweeter(8)</a></li>												
+																		
+						</ul>
+					</li>
+					<li class="subMenu"><a>Routers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Broadband Routers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Routers(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Edge Router(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subscriber Edge Router(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Core Router(8)</a></li>												
+																		
+						</ul>
+					</li>
+					
 				</ul>
-			</li>
-			<li class="subMenu"><a> CLOTHES [840] </a>
-			<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Clothing (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Shoes (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Hand Bags (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Clothings  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Shoes (6)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Clothing (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Shoes (3)</a></li>												
-			</ul>
-			</li>
-			<li class="subMenu"><a>FOOD AND BEVERAGES [1000]</a>
-				<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Angoves  (35)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Bouchard Aine & Fils (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>French Rabbit (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Louis Bernard  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>BIB Wine (Bag in Box) (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Other Liquors & Wine (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Garden (3)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Khao Shong (11)</a></li>												
-			</ul>
-			</li>
-			<li><a href="products.html">HEALTH & BEAUTY [18]</a></li>
-			<li><a href="products.html">SPORTS & LEISURE [58]</a></li>
-			<li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
-		</ul>
-		<br/>
-		  <div class="thumbnail">
-			<img src="themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
-			<div class="caption">
-			  <h5>Panasonic</h5>
-				<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+				<br/>
+				<br/>
+
+
 			</div>
-		  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
-				<div class="caption">
-				  <h5>Kindle</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
-				</div>
-			  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
-				<div class="caption">
-				  <h5>Payment Methods</h5>
-				</div>
-			  </div>
-	</div>
 <!-- Sidebar end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
@@ -177,33 +187,54 @@
     </ul>
 	<h3> Terms and Conditions</h3>	
 	<hr class="soft"/>
-	<h5>Lorem ipsum dolor sit amet</h5><br/>
+	<h5>1. Terms of Use</h5><br/>
 	<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum varius dapibus. Sed hendrerit porta felis at sollicitudin. Sed at nunc ac neque semper fermentum. Proin diam sem, semper fermentum eleifend nec, viverra ac est. Sed ultricies, lectus et vehicula imperdiet, felis tortor vehicula turpis, non fermentum enim est et sapien. Nam justo mi, dignissim a euismod ut, pretium sed leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In viverra porta est, consequat elementum metus tristique a. Mauris tempus tellus a metus dapibus faucibus egestas lectus consectetur. Integer libero dolor, luctus non congue vitae, tempus ut neque. Nunc eleifend lorem quis diam pharetra sagittis. Aliquam ut dolor dui. Fusce dictum facilisis ipsum eu porttitor. In ultricies rhoncus tortor vitae tincidunt.
+	 The contents set out herein form an electronic record in terms of Information Technology Act, 2000 and rules there under as applicable and as amended from time to time. As such, this document does not require any physical or digital signatures and forms a valid and binding agreement between the Website and the User. These Terms are made available to the User pursuant to and in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries Guidelines) Rules, 2011 that require publishing the rules, regulations, privacy policy and Terms for access or usage of the Website
+
+     The headings and subheadings herein are included for convenience and identification only and are not intended to describe, interpret, define or limit the scope, extent or intent of the Terms or the right to use the Website by you contained herein or any other section or pages of the Website or any linked sites in any manner whatsoever.
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>2. Eligibility to use</h5><br/>
 <p>
-Nullam a vulputate leo. Nulla tristique metus eros. Curabitur ultrices commodo mauris, sit amet faucibus lectus fermentum in. Nulla eleifend, augue hendrerit tempus faucibus, diam lacus aliquet urna, eget facilisis turpis risus quis arcu. Cras placerat suscipit sem, ac consequat dui iaculis eu. Cras elit enim, adipiscing lobortis rutrum ac, vehicula nec massa. Praesent pharetra ligula ac erat venenatis feugiat. Quisque id nulla mi. Mauris at orci nec nisi eleifend auctor. Mauris placerat consectetur tincidunt. Nam eu tellus vitae dolor vestibulum commodo. Etiam tristique, urna ac convallis laoreet, enim enim aliquet neque, id cursus risus nulla sed ligula. Nunc quam libero, accumsan vitae consequat at, sollicitudin eget mi. Phasellus in molestie diam. Aliquam enim purus, tempor id sodales non, volutpat eu diam. Donec eu nisl lacinia leo semper lobortis sed sit amet elit.
+     Use of the Website is available only to such persons who can legally contract under Indian Contract Act, 1872. Persons who are "incompetent to contract" within the meaning of the Indian Contract Act, 1872 including minors, un-discharged insolvents etc. shall not be eligible to use the Website.
+
+     Any minor desirous to use or transact on Website, is required to conduct such transaction through their legal guardian or parents.
+
+     The Website reserves the right to terminate any membership and / or refuse to provide access to the Website if it is brought to the Websites notice or if it is discovered that the person accessing/using the Website is under the age of 18 years.
+
+     By accepting the Terms or using or transacting on the Website, the User irrevocably declares and undertakes that he/she is of legal age i.e. 18 years or older and capable of entering into a binding contract and such usage shall be deemed to form a contract between the Website and such User to the extent permissible under applicable laws.
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>3. Account, Password, and Security</h5><br/>
 <p>
-Aliquam interdum, ipsum a posuere dictum, tellus risus blandit dolor, at tristique sapien urna vel purus. Pellentesque in dictum urna. Sed feugiat libero sit amet arcu malesuada eu convallis dui convallis. Donec facilisis massa a ipsum aliquam lobortis. Praesent ac lectus sed leo aliquam egestas. Sed ante neque, volutpat ac tempor et, bibendum at ligula. Nunc porta vestibulum sodales.
+ Any person may access the Website and the Products either by registering to the Website or using the Website as a guest. However, a guest user may not have access to all sections of the Website including certain benefits/promotional offers, which shall be reserved only for the purpose of registered Users, and which may change from time to time at the sole discretion of the Website.
+
+ If you wish to register yourself with the Website, you shall be required to create an account by registering through Facebook or your email account or by filling in the details prescribed in the Website registration form. You will then receive a password and account designation upon completing the Website's registration process. You are responsible for maintaining the confidentiality of the password and account, and are fully responsible for any and all activities that occur under your password or account. You agree to (a) immediately notify the Website of any unauthorized use of your password or account or any other breach of security, and (b) ensure that you exit from your account at the end of each session. Jabong.com cannot and will not be liable for any loss or damage arising from your failure to comply with this Section or for any losses occurring thereto. You, as the User, waive any claims against the Website for any loss and damage suffered by you on account of your failure to comply with the Terms and reasonably expected good practices in this regard
 	</p>
-	<h5>Lorem ipsum dolor sit amet</h5><br/>
+	<h5>4. Listing And Selling</h5><br/>
 <p>
-Nullam a vulputate leo. Nulla tristique metus eros. Curabitur ultrices commodo mauris, sit amet faucibus lectus fermentum in. Nulla eleifend, augue hendrerit tempus faucibus, diam lacus aliquet urna, eget facilisis turpis risus quis arcu. Cras placerat suscipit sem, ac consequat dui iaculis eu. Cras elit enim, adipiscing lobortis rutrum ac, vehicula nec massa. Praesent pharetra ligula ac erat venenatis feugiat. Quisque id nulla mi. Mauris at orci nec nisi eleifend auctor. Mauris placerat consectetur tincidunt. Nam eu tellus vitae dolor vestibulum commodo. Etiam tristique, urna ac convallis laoreet, enim enim aliquet neque, id cursus risus nulla sed ligula. Nunc quam libero, accumsan vitae consequat at, sollicitudin eget mi. Phasellus in molestie diam. Aliquam enim purus, tempor id sodales non, volutpat eu diam. Donec eu nisl lacinia leo semper lobortis sed sit amet elit.
+ By listing a Product on the Website, every Seller warrants that all such Products are legally permitted to be sold. Each Seller further warrants that they shall provide most accurate description of the products to be sold on the Website. Listings may only include text, pictures and other content that Jabong may permit from time to time. Sellers may charge reasonable shipping and handling fees to cover the costs for packaging and posting the items. Sellers may issue promotional codes for promotional purposes only and these are to be used against purchases from the issuing Sellers products only. Promotional codes have no cash value and cannot be exchanged for money or credit.
+
+ All sales on the Website are binding in nature on both the User and Seller. The Seller is responsible for shipping up to the point of delivery or otherwise completing the transaction with the User within 2 days, unless there is an exceptional circumstance or occurrence of a force majeure event.
+
+ You agree and acknowledge that Jabong is only a facilitator and is not and cannot be a party to or control in any manner any transactions on the Website. Accordingly, the sale of Products on the Website shall strictly be a bipartite agreement between you and the Sellers on the Website. Jabong does not hold any title, right or interest in the Products listed on the Website. We expressly disclaim all obligations and liabilities emanating from an agreement between you and the Sellers on the Website.
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>5. Products</h5><br/>
 <p>
-Aliquam interdum, ipsum a posuere dictum, tellus risus blandit dolor, at tristique sapien urna vel purus. Pellentesque in dictum urna. Sed feugiat libero sit amet arcu malesuada eu convallis dui convallis. Donec facilisis massa a ipsum aliquam lobortis. Praesent ac lectus sed leo aliquam egestas. Sed ante neque, volutpat ac tempor et, bibendum at ligula. Nunc porta vestibulum sodales.
+ The Website operates as a market place and merely provides an online platform to various Sellers to advertise, display, make available and sell various Products (including services ancillary to the products and services), vouchers, and services to Users of the Website (Products). The Website merely facilitates the engagement of the Users and various Sellers and provides such other services as are incidental and ancillary thereto. Additionally, the Website reserves the right to terminate the services offered at any time to the Users without any notice.
+
+ All Products exhibited on the Website are on an as is and as available basis. Images of products are for and by reference only and actual Product may vary from the corresponding image exhibited. The Website disclaims any liabilities arising out of any discrepancies to this end.
+
+ Jabong.com hereby disclaims any guarantees of exactness as to the finish and appearance of the final Product as ordered by the User. The quality of any products, Services, information, or other material purchased or obtained by you through the Website is not endorsed or supported by Jabong and is the sole liability of the respective Seller. Alterations to certain aspects of your order such as the merchandise brand, size, color etc. may be required due to limitations caused by availability of product difference in size charts of respective brands etc.
 	</p>
-	<h5>Lorem ipsum dolor sit amet</h5><br/>
+	<h5>6. Payments</h5><br/>
 <p>
-Nullam a vulputate leo. Nulla tristique metus eros. Curabitur ultrices commodo mauris, sit amet faucibus lectus fermentum in. Nulla eleifend, augue hendrerit tempus faucibus, diam lacus aliquet urna, eget facilisis turpis risus quis arcu. Cras placerat suscipit sem, ac consequat dui iaculis eu. Cras elit enim, adipiscing lobortis rutrum ac, vehicula nec massa. Praesent pharetra ligula ac erat venenatis feugiat. Quisque id nulla mi. Mauris at orci nec nisi eleifend auctor. Mauris placerat consectetur tincidunt. Nam eu tellus vitae dolor vestibulum commodo. Etiam tristique, urna ac convallis laoreet, enim enim aliquet neque, id cursus risus nulla sed ligula. Nunc quam libero, accumsan vitae consequat at, sollicitudin eget mi. Phasellus in molestie diam. Aliquam enim purus, tempor id sodales non, volutpat eu diam. Donec eu nisl lacinia leo semper lobortis sed sit amet elit.
+ Prices for Products are described on our Website and are incorporated into these Terms by reference. All prices are in Indian rupees. Prices, Products and services are offered by the respective Seller and may change in accordance with the brand guidelines or other terms and conditions applicable to each Seller. Users further undertake that by initiating a transaction, the User is entering into a legally binding and enforceable contract with the Seller to purchase the products using such payment facilities as may be permitted by applicable laws and as may be accepted by the Website.
+
+ The Website does not charge any registration/membership or browsing fee. However, the Website reserves the absolute right to alter the fee policy from time to time. In the event, the Website alters its services, it may introduce new fees for such altered services. All such fees that the Website may charge will be intimated to the Users and such change shall automatically become effective immediately after they are posted on the Website. All such fees charged by the Website shall be in Indian Rupees. The Users continued use of the Website shall be deemed as an acceptance of the amended terms and conditions.
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>7. Shipping and Delivery</h5><br/>
 <p>
-Aliquam interdum, ipsum a posuere dictum, tellus risus blandit dolor, at tristique sapien urna vel purus. Pellentesque in dictum urna. Sed feugiat libero sit amet arcu malesuada eu convallis dui convallis. Donec facilisis massa a ipsum aliquam lobortis. Praesent ac lectus sed leo aliquam egestas. Sed ante neque, volutpat ac tempor et, bibendum at ligula. Nunc porta vestibulum sodales.
+ All Products purchased from the Website shall be delivered to the User by standard courier services by Jabong.com on behalf of the respective Sellers through a logistics partner or by the Sellers themselves. All deliveries where applicable shall be made on a best efforts basis, and while the Website will endeavor to deliver the Products on the dates intimated, the Website disclaims any claims or liabilities arising from any delay in this regard. On behalf of the Seller, a nominal fee may be charged on all cash on delivery (COD) orders. The COD charge can be viewed at the time of placing the order and in all order related emails. This charge shall not be refunded if an item is returned or if the cancellation request is raised after the order is shipped.
+  An estimated delivery time shall be displayed on the order summary page. On placing your order, you will receive an email containing a summary of the order and also the estimated delivery time to your location.
 	</p>
 </div>
 </div></div>

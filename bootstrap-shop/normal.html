@@ -30,78 +30,76 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
 	<style type="text/css" id="enject"></style>
+		<link rel="stylesheet" type="text/css" href="mystyling.css">
+		<script src="https://use.fontawesome.com/3a82a51b6b.js"></script>
   </head>
 <body>
-<div id="header">
-<div class="container">
-<div id="welcomeLine" class="row">
-	<div class="span6">Welcome!<strong> User</strong></div>
-	<div class="span6">
-	<div class="pull-right">
-		<a href="product_summary.html"><span class="">Fr</span></a>
-		<a href="product_summary.html"><span class="">Es</span></a>
-		<span class="btn btn-mini">En</span>
-		<a href="product_summary.html"><span>&pound;</span></a>
-		<span class="btn btn-mini">$155.00</span>
-		<a href="product_summary.html"><span class="">$</span></a>
-		<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Itemes in your cart </span> </a> 
-	</div>
-	</div>
-</div>
+
 <!-- Navbar ================================================== -->
 <div id="logoArea" class="navbar">
-<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-</a>
-  <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
-		<form class="form-inline navbar-search" method="post" action="products.html" >
-		<input id="srchFld" class="srchTxt" type="text" />
-		  <select class="srchTxt">
-			<option>All</option>
-			<option>CLOTHES </option>
-			<option>FOOD AND BEVERAGES </option>
-			<option>HEALTH & BEAUTY </option>
-			<option>SPORTS & LEISURE </option>
-			<option>BOOKS & ENTERTAINMENTS </option>
-		</select> 
-		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
-    </form>
-    <ul id="topMenu" class="nav pull-right">
-	 <li class=""><a href="special_offer.html">Specials Offer</a></li>
-	 <li class=""><a href="normal.html">Delivery</a></li>
-	 <li class=""><a href="contact.html">Contact</a></li>
-	 <li class="">
-	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
-	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3>Login Block</h3>
-		  </div>
-		  <div class="modal-body">
-			<form class="form-horizontal loginFrm">
-			  <div class="control-group">								
-				<input type="text" id="inputEmail" placeholder="Email">
-			  </div>
-			  <div class="control-group">
-				<input type="password" id="inputPassword" placeholder="Password">
-			  </div>
-			  <div class="control-group">
-				<label class="checkbox">
-				<input type="checkbox"> Remember me
-				</label>
-			  </div>
-			</form>		
-			<button type="submit" class="btn btn-success">Sign in</button>
-			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		  </div>
+			<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div class="navbar-inner navbar-fixed-top">
+				<a class="brand" href="index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  ComputaMart</a>
+				<ul id="topMenu" class="nav pull-left">
+					<li class=""><a href="special_offer.html">Specials Offers</a></li>
+					<li class=""><a href="normal.html">Testimonials</a></li>
+					<li class=""><a href="contact.html">Contact Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Desktops</a></li>
+							<li><a href="#">Laptops</a></li>
+							<li><a href="#">Custom PC</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Storage Devices</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">More Items</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="topMenu" class="nav pull-right">
+
+					<li>
+						<a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
+						<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3>Login Block</h3>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal loginFrm">
+									<div class="control-group">								
+										<input type="text" id="inputEmail" placeholder="Email">
+									</div>
+									<div class="control-group">
+										<input type="password" id="inputPassword" placeholder="Password">
+									</div>
+									<div class="control-group">
+										<label class="checkbox">
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</form>		
+								<button type="submit" class="btn btn-success">Sign in</button>
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+							</div>
+						</div>
+					</li>
+					<li>
+
+						<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Your Cart</span> </a> 
+
+					</li>
+					>
+				</ul>
+			</ul>
+
+		</div>
 	</div>
-	</li>
-    </ul>
-  </div>
-</div>
 </div>
 </div>
 <!-- Header End====================================================================== -->
@@ -110,100 +108,114 @@
 	<div class="row">
 <!-- Sidebar ================================================== -->
 	<div id="sidebar" class="span3">
-		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="themes/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
-		<ul id="sideManu" class="nav nav-tabs nav-stacked">
-			<li class="subMenu open"><a> ELECTRONICS [230]</a>
-				<ul>
-				<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+
+				<ul id="sideManu" class="nav nav-tabs nav-stacked">
+					<li class="subMenu open"><a> Desktops [40]</a>
+						<ul>
+							<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Intel Processor Powered (100) </a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Amd Processor Powered (30)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Gaming Configuration (80)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Design Your Custom Pc</a></li>
+						</ul>
+					</li>
+					<li class="subMenu"><a> Processors [50]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A9-9410  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-8700P  (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-9600P(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A12-9700P  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-6100U(6)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-7100U  (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i5-6200U  (3)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Storage Devices [100]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Punch card(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Floppy diskette(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Zip disk (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>CD(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>DVD (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Blu-ray disc (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Flash jump drive (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Hard drive / SSD (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Keyboards And Mouse [30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTY(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AZERTY(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTZ (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>HCESAR(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Mouse(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>GStick Mouse (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Optical Mouse (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Trackball Mouse (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Speakers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Full-range drivers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subwoofer(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Woofer(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Mid-range driver(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Tweeter(8)</a></li>												
+																		
+						</ul>
+					</li>
+					<li class="subMenu"><a>Routers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Broadband Routers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Routers(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Edge Router(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subscriber Edge Router(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Core Router(8)</a></li>												
+																		
+						</ul>
+					</li>
+					
 				</ul>
-			</li>
-			<li class="subMenu"><a> CLOTHES [840] </a>
-			<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Clothing (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Shoes (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Hand Bags (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Clothings  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Shoes (6)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Clothing (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Shoes (3)</a></li>												
-			</ul>
-			</li>
-			<li class="subMenu"><a>FOOD AND BEVERAGES [1000]</a>
-				<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Angoves  (35)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Bouchard Aine & Fils (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>French Rabbit (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Louis Bernard  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>BIB Wine (Bag in Box) (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Other Liquors & Wine (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Garden (3)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Khao Shong (11)</a></li>												
-			</ul>
-			</li>
-			<li><a href="products.html">HEALTH & BEAUTY [18]</a></li>
-			<li><a href="products.html">SPORTS & LEISURE [58]</a></li>
-			<li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
-		</ul>
-		<br/>
-		  <div class="thumbnail">
-			<img src="themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
-			<div class="caption">
-			  <h5>Panasonic</h5>
-				<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+				<br/>
+				<br/>
+
+
 			</div>
-		  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
-				<div class="caption">
-				  <h5>Kindle</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
-				</div>
-			  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
-				<div class="caption">
-				  <h5>Payment Methods</h5>
-				</div>
-			  </div>
-	</div>
 <!-- Sidebar end=============================================== -->
 	<div class="span9" id="mainCol">
     <ul class="breadcrumb">
 		<li><a href="index.html">Home</a> <span class="divider">/</span></li>
 		<li class="active">Page Title</li>
     </ul>
-	<h3> Title of the page</h3>	
+	<h3> Testimonials</h3>	
 	<hr class="soft"/>
-	<h5>Lorem ipsum dolor sit amet</h5><br/>
+	<h5>( Customer: Harish Chandra from Hyderabad ) September 27, 2017, 2:26 pm</h5><br/>
 	<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum varius dapibus. Sed hendrerit porta felis at sollicitudin. Sed at nunc ac neque semper fermentum. Proin diam sem, semper fermentum eleifend nec, viverra ac est. Sed ultricies, lectus et vehicula imperdiet, felis tortor vehicula turpis, non fermentum enim est et sapien. Nam justo mi, dignissim a euismod ut, pretium sed leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In viverra porta est, consequat elementum metus tristique a. Mauris tempus tellus a metus dapibus faucibus egestas lectus consectetur. Integer libero dolor, luctus non congue vitae, tempus ut neque. Nunc eleifend lorem quis diam pharetra sagittis. Aliquam ut dolor dui. Fusce dictum facilisis ipsum eu porttitor. In ultricies rhoncus tortor vitae tincidunt.
+	I've purchased about 6 times from this website so far, and barring one time (which possibly was a mixup on the courier service's part), EVERY SINGLE TIME, the order arrived within 2 days (shipping and delivery included), and EVERY SINGLE TIME the packaging and the product qualities were superb, dare i say flawless. This is my Go-to for electronic components. There is a request/suggestion though: please increase item listings, include sparkfun/adafruit/ other products in your listings as well. Good job - Cheers #2
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>( Customer: Baala from BLR ) August 23, 2017, 4:00 pm</h5><br/>
 <p>
-Nullam a vulputate leo. Nulla tristique metus eros. Curabitur ultrices commodo mauris, sit amet faucibus lectus fermentum in. Nulla eleifend, augue hendrerit tempus faucibus, diam lacus aliquet urna, eget facilisis turpis risus quis arcu. Cras placerat suscipit sem, ac consequat dui iaculis eu. Cras elit enim, adipiscing lobortis rutrum ac, vehicula nec massa. Praesent pharetra ligula ac erat venenatis feugiat. Quisque id nulla mi. Mauris at orci nec nisi eleifend auctor. Mauris placerat consectetur tincidunt. Nam eu tellus vitae dolor vestibulum commodo. Etiam tristique, urna ac convallis laoreet, enim enim aliquet neque, id cursus risus nulla sed ligula. Nunc quam libero, accumsan vitae consequat at, sollicitudin eget mi. Phasellus in molestie diam. Aliquam enim purus, tempor id sodales non, volutpat eu diam. Donec eu nisl lacinia leo semper lobortis sed sit amet elit.
+Ref: Invoice No.: 0346 Order ID: #64954 Date Added: 22/08/2017 Good Quality Stuff; Especially 12W Soldering station. All 10 items I ordered reached good. Good packing too. The best is REAL QUICK delivery! Once ordered in 15 Mins I rcvd SMS with FedEx Tracking and I rcvd the Item in 24 Hrs.!!! Real Awesome! Area to improve: 1. Communication was pain, as ONLY 1 tel line and 90% it is engaged! 2. Post REAL pics that too in multiples to help make decision. 3. Post Max Tech Specs so that one need to interact (call) minimal. 4. Try yo make simple / Comprehensive / Ultimate Kits with discounts!!! Thnx.
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>( Customer: Mark Collins from Vishakhapatnam ) September 26, 2017, 3:28 pm</h5><br/>
 <p>
-Aliquam interdum, ipsum a posuere dictum, tellus risus blandit dolor, at tristique sapien urna vel purus. Pellentesque in dictum urna. Sed feugiat libero sit amet arcu malesuada eu convallis dui convallis. Donec facilisis massa a ipsum aliquam lobortis. Praesent ac lectus sed leo aliquam egestas. Sed ante neque, volutpat ac tempor et, bibendum at ligula. Nunc porta vestibulum sodales.
+This site is perfect to buy items that can only be bought in bulk on other sites like Amazon another plus is that I receive the parcel the next day(This may differ based on your location).
+
 	</p>
-	<h5>Lorem ipsum dolor sit amet</h5><br/>
+	<h5>( Customer: Gireesh kumar from vishakhapattanam ) May 29, 2017, 9:49 pm</h5><br/>
 <p>
-Nullam a vulputate leo. Nulla tristique metus eros. Curabitur ultrices commodo mauris, sit amet faucibus lectus fermentum in. Nulla eleifend, augue hendrerit tempus faucibus, diam lacus aliquet urna, eget facilisis turpis risus quis arcu. Cras placerat suscipit sem, ac consequat dui iaculis eu. Cras elit enim, adipiscing lobortis rutrum ac, vehicula nec massa. Praesent pharetra ligula ac erat venenatis feugiat. Quisque id nulla mi. Mauris at orci nec nisi eleifend auctor. Mauris placerat consectetur tincidunt. Nam eu tellus vitae dolor vestibulum commodo. Etiam tristique, urna ac convallis laoreet, enim enim aliquet neque, id cursus risus nulla sed ligula. Nunc quam libero, accumsan vitae consequat at, sollicitudin eget mi. Phasellus in molestie diam. Aliquam enim purus, tempor id sodales non, volutpat eu diam. Donec eu nisl lacinia leo semper lobortis sed sit amet elit.
+I have availed products from electroncomponents.com from many of the states in india. earlier i was in punjab and they have delivered material within 2 day. still im in vishakhapattanam and they are sending material on the next day. i consider this as a lightning speed. when ever i order at morning, the product reaches to me on next day morning. price also same as the market price . little variation on some items . thanks you .
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>( Customer: venkat from villupuram ) July 15, 2017, 8:32 am</h5><br/>
 <p>
-Aliquam interdum, ipsum a posuere dictum, tellus risus blandit dolor, at tristique sapien urna vel purus. Pellentesque in dictum urna. Sed feugiat libero sit amet arcu malesuada eu convallis dui convallis. Donec facilisis massa a ipsum aliquam lobortis. Praesent ac lectus sed leo aliquam egestas. Sed ante neque, volutpat ac tempor et, bibendum at ligula. Nunc porta vestibulum sodales.
+Lightning fast shipping.You are at the right place for your project with lots of components availability also ask for an item if not available.They Packed shipment and booked courier in 1 hour on placing order.Excellent service and keep it up.But local courier making delay would be better if multiple selection courier option added. Thankyou electroncomponents.com!!!
 	</p>
-	<h5>Lorem ipsum dolor sit amet</h5><br/>
+	<h5>( Customer: Shiny from Vizianagaram ) March 8, 2017, 2:20 pm</h5><br/>
 <p>
-Nullam a vulputate leo. Nulla tristique metus eros. Curabitur ultrices commodo mauris, sit amet faucibus lectus fermentum in. Nulla eleifend, augue hendrerit tempus faucibus, diam lacus aliquet urna, eget facilisis turpis risus quis arcu. Cras placerat suscipit sem, ac consequat dui iaculis eu. Cras elit enim, adipiscing lobortis rutrum ac, vehicula nec massa. Praesent pharetra ligula ac erat venenatis feugiat. Quisque id nulla mi. Mauris at orci nec nisi eleifend auctor. Mauris placerat consectetur tincidunt. Nam eu tellus vitae dolor vestibulum commodo. Etiam tristique, urna ac convallis laoreet, enim enim aliquet neque, id cursus risus nulla sed ligula. Nunc quam libero, accumsan vitae consequat at, sollicitudin eget mi. Phasellus in molestie diam. Aliquam enim purus, tempor id sodales non, volutpat eu diam. Donec eu nisl lacinia leo semper lobortis sed sit amet elit.
+May God bless your team. I ordered three times till now. Your team is so faithful. I love the components i receive, the way they are delivered, neat packing...thank you electron components.
 </p>
-<h5>Lorem ipsum dolor sit amet</h5><br/>
+<h5>( Customer: Aravind Chowdary from Nizamabad ) January 14, 2017, 12:15 pm</h5><br/>
 <p>
-Aliquam interdum, ipsum a posuere dictum, tellus risus blandit dolor, at tristique sapien urna vel purus. Pellentesque in dictum urna. Sed feugiat libero sit amet arcu malesuada eu convallis dui convallis. Donec facilisis massa a ipsum aliquam lobortis. Praesent ac lectus sed leo aliquam egestas. Sed ante neque, volutpat ac tempor et, bibendum at ligula. Nunc porta vestibulum sodales.
+It gives it's services very fast and give best components for buyers
 	</p>
 </div>
 </div></div>

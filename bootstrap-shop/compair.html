@@ -30,6 +30,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
 	<style type="text/css" id="enject"></style>
+	<link rel="stylesheet" type="text/css" href="mystyling.css">
+		<script src="https://use.fontawesome.com/3a82a51b6b.js"></script>
   </head>
 <body>
 <div id="header">
@@ -50,204 +52,207 @@
 </div>
 <!-- Navbar ================================================== -->
 <div id="logoArea" class="navbar">
-<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-</a>
-  <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
-		<form class="form-inline navbar-search" method="post" action="products.html" >
-		<input id="srchFld" class="srchTxt" type="text" />
-		  <select class="srchTxt">
-			<option>All</option>
-			<option>CLOTHES </option>
-			<option>FOOD AND BEVERAGES </option>
-			<option>HEALTH & BEAUTY </option>
-			<option>SPORTS & LEISURE </option>
-			<option>BOOKS & ENTERTAINMENTS </option>
-		</select> 
-		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
-    </form>
-    <ul id="topMenu" class="nav pull-right">
-	 <li class=""><a href="special_offer.html">Specials Offer</a></li>
-	 <li class=""><a href="normal.html">Delivery</a></li>
-	 <li class=""><a href="contact.html">Contact</a></li>
-	 <li class="">
-	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
-	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3>Login Block</h3>
-		  </div>
-		  <div class="modal-body">
-			<form class="form-horizontal loginFrm">
-			  <div class="control-group">								
-				<input type="text" id="inputEmail" placeholder="Email">
-			  </div>
-			  <div class="control-group">
-				<input type="password" id="inputPassword" placeholder="Password">
-			  </div>
-			  <div class="control-group">
-				<label class="checkbox">
-				<input type="checkbox"> Remember me
-				</label>
-			  </div>
-			</form>		
-			<button type="submit" class="btn btn-success">Sign in</button>
-			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		  </div>
+			<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div class="navbar-inner navbar-fixed-top">
+				<a class="brand" href="index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  ComputaMart</a>
+				<ul id="topMenu" class="nav pull-left">
+					<li class=""><a href="special_offer.html">Specials Offers</a></li>
+					<li class=""><a href="normal.html">Testimonials</a></li>
+					<li class=""><a href="contact.html">Contact Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Desktops</a></li>
+							<li><a href="#">Laptops</a></li>
+							<li><a href="#">Custom PC</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Storage Devices</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">More Items</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="topMenu" class="nav pull-right">
+
+					<li>
+						<a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
+						<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3>Login Block</h3>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal loginFrm">
+									<div class="control-group">								
+										<input type="text" id="inputEmail" placeholder="Email">
+									</div>
+									<div class="control-group">
+										<input type="password" id="inputPassword" placeholder="Password">
+									</div>
+									<div class="control-group">
+										<label class="checkbox">
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</form>		
+								<button type="submit" class="btn btn-success">Sign in</button>
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+							</div>
+						</div>
+					</li>
+					<li>
+
+						<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Your Cart</span> </a> 
+
+					</li>
+					>
+				</ul>
+			</ul>
+
+		</div>
 	</div>
-	</li>
-    </ul>
-  </div>
-</div>
 </div>
 </div>
 <!-- Header End====================================================================== -->
-<div id="carouselBlk">
-	<div id="myCarousel" class="carousel slide">
-		<div class="carousel-inner">
-		  <div class="item active">
-		  <div class="container">
-			<a href="register.html"><img style="width:100%" src="themes/images/carousel/1.png" alt="special offers"/></a>
-			<div class="carousel-caption">
-				  <h4>Second Thumbnail label</h4>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<div class="container" id="imgslider">
+	<div id="carouselBlk">
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="container">
+						<a href="register.html"><img style="width:70%" src="themes/images/carousel/predator2.jpg" alt="special offers"/></a>
+
+
+					</div>
 				</div>
-		  </div>
-		  </div>
-		  <div class="item">
-		  <div class="container">
-			<a href="register.html"><img style="width:100%" src="themes/images/carousel/2.png" alt=""/></a>
-				<div class="carousel-caption">
-				  <h4>Second Thumbnail label</h4>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<div class="item">
+					<div class="container">
+						<a href="register.html"><img style="width:70%" src="themes/images/carousel/gamingPc.jpg" alt=""/></a>
+
+					</div>
 				</div>
-		  </div>
-		  </div>
-		  <div class="item">
-		  <div class="container">
-			<a href="register.html"><img src="themes/images/carousel/3.png" alt=""/></a>
-			<div class="carousel-caption">
-				  <h4>Second Thumbnail label</h4>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<div class="item">
+					<div class="container">
+						<a href="register.html"><img style="width:70%" src="themes/images/carousel/mac.jpg" alt=""/></a>
+
+
+					</div>
 				</div>
-			
-		  </div>
-		  </div>
-		   <div class="item">
-		   <div class="container">
-			<a href="register.html"><img src="themes/images/carousel/4.png" alt=""/></a>
-			<div class="carousel-caption">
-				  <h4>Second Thumbnail label</h4>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<div class="item">
+					<div class="container">
+						<a href="register.html"><img style="width:65%" src="themes/images/carousel/rogue.jpg" alt=""/></a>
+
+					</div>
 				</div>
-		   
-		  </div>
-		  </div>
-		   <div class="item">
-		   <div class="container">
-			<a href="register.html"><img src="themes/images/carousel/5.png" alt=""/></a>
-			<div class="carousel-caption">
-				  <h4>Second Thumbnail label</h4>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<div class="item">
+					<div class="container">
+						<a href="register.html"><img style="width:80%" src="themes/images/carousel/alien.png" alt=""/></a>
+
+					</div>
+				</div>
+
 			</div>
-		  </div>
-		  </div>
-		   <div class="item">
-		   <div class="container">
-			<a href="register.html"><img src="themes/images/carousel/6.png" alt=""/></a>
-			<div class="carousel-caption">
-				  <h4>Second Thumbnail label</h4>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				</div>
-		  </div>
-		  </div>
 		</div>
 		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-	  </div> 
+	</div> 
 </div>
 <div id="mainBody">
 	<div class="container">
-	<div class="row">
+		<div class="row">
 <!-- Sidebar ================================================== -->
 	<div id="sidebar" class="span3">
-		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="themes/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
-		<ul id="sideManu" class="nav nav-tabs nav-stacked">
-			<li class="subMenu open"><a> ELECTRONICS [230]</a>
-				<ul>
-				<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+
+				<ul id="sideManu" class="nav nav-tabs nav-stacked">
+					<li class="subMenu open"><a> Desktops [40]</a>
+						<ul>
+							<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+						</ul>
+					</li>
+					<li class="subMenu"><a> Laptops [50] </a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A9-9410  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-8700P  (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-9600P(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A12-9700P  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-6100U(6)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-7100U  (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i5-6200U  (3)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Storage Devices [100]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Punch card(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Floppy diskette(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Zip disk (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>CD(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>DVD (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Blu-ray disc (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Flash jump drive (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Hard drive / SSD (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Keyboards And Mouse [30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTY(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AZERTY(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTZ (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>HCESAR(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Mouse(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>GStick Mouse (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Optical Mouse (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Trackball Mouse (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Speakers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Full-range drivers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subwoofer(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Woofer(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Mid-range driver(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Tweeter(8)</a></li>												
+																		
+						</ul>
+					</li>
+					<li class="subMenu"><a>Routers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Broadband Routers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Routers(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Edge Router(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subscriber Edge Router(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Core Router(8)</a></li>												
+																		
+						</ul>
+					</li>
+					
 				</ul>
-			</li>
-			<li class="subMenu"><a> CLOTHES [840] </a>
-			<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Clothing (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Shoes (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Hand Bags (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Clothings  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Shoes (6)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Clothing (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Shoes (3)</a></li>												
-			</ul>
-			</li>
-			<li class="subMenu"><a>FOOD AND BEVERAGES [1000]</a>
-				<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Angoves  (35)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Bouchard Aine & Fils (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>French Rabbit (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Louis Bernard  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>BIB Wine (Bag in Box) (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Other Liquors & Wine (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Garden (3)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Khao Shong (11)</a></li>												
-			</ul>
-			</li>
-			<li><a href="products.html">HEALTH & BEAUTY [18]</a></li>
-			<li><a href="products.html">SPORTS & LEISURE [58]</a></li>
-			<li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
-		</ul>
-		<br/>
-		  <div class="thumbnail">
-			<img src="themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
-			<div class="caption">
-			  <h5>Panasonic</h5>
-				<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+				<br/>
+				<br/>
+
+
 			</div>
-		  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
-				<div class="caption">
-				  <h5>Kindle</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
-				</div>
-			  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
-				<div class="caption">
-				  <h5>Payment Methods</h5>
-				</div>
-			  </div>
-	</div>
 <!-- Sidebar end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
 		<li><a href="index.html">Home</a> <span class="divider">/</span></li>
-		<li class="active">Products Compairsition</li>
+		<li class="active">Products Comparison</li>
     </ul>
-	<h3> Products Compairsition <small class="pull-right"> 2 products are compaired </small></h3>	
+	<h3> Products Comparison <small class="pull-right"> 2 products are compaired </small></h3>	
 	<hr class="soft"/>
 
 	<table id="compairTbl" class="table table-bordered">
               <thead>
                 <tr>
                   <th>Features</th>
-                  <th>Product1 name here </th>
-                  <th>Product2 name here</th>
+                  <th>MacBook Pro </th>
+                  <th>ASUS</th>
                 </tr>
               </thead>
               <tbody>
@@ -255,11 +260,9 @@
                   <td>&nbsp;</td>
                   <td style="text-align:center">
 					<p class="justify">
-						Nowadays the lingerie industry is one of the most successful business spheres.
-						We always stay in touch with the latest fashion tendencies - that is why our 
-						goods are so popular and we have a great number of faithful customers all over the country.
+						It's razor thin, feather light and even faster and more powerful than before. It has the brightest, most colourful Mac notebook display ever. And it features the Touch Bar -a Multi-Touch-enabled strip of glass built into the keyboard for instant access to the tools you want, exactly when you want them. MacBook Pro is built on groundbreaking ideas. And it's ready for yours.
 					</p>
-				<img src="themes/images/products/1.jpg" alt=""/>
+				<img src="mac.jpg" alt=""/>
 				<form class="form-horizontal qtyFrm">
 				<h3> $222.00</h3><br/>
 				 <a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
@@ -268,11 +271,9 @@
 				</td>
                   <td>
 				  <p class="justify">
-					Nowadays the lingerie industry is one of the most successful business spheres.
-					We always stay in touch with the latest fashion tendencies - that is why our 
-					goods are so popular and we have a great number of faithful customers all over the country.
+					ROG Strix GL553 has a specially-designed chiclet gaming keyboard with 4-area RGB lighting and red-backlit scissor-switch keys that offer you 2.5mm of travel distance for tactile keystrokes. It also features highlighted WASD keys, so you know where your hands need to be. On top of that, a larger space bar and isolated arrow keys ensure that everything you need is kept within easy reach.
 				</p>
-				<img src="themes/images/products/3.jpg" alt=""/>
+				<img src="rogue.jpg" alt=""/>
 				
 				<form class="form-horizontal qtyFrm">
 				<h3> $190.00</h3>
@@ -284,14 +285,10 @@
                 </tr>
                 <tr>
                   <td>Height</td>
-                  <td>2"</td>
-                  <td>2"</td>
+                  <td>12"</td>
+                  <td>10"</td>
                 </tr>
-                <tr>
-                  <td>Deepth</td>
-                  <td>5"</td>
-                  <td>5"</td>
-                </tr>
+                
 				<tr>
                   <td>Dimension</td>
                   <td>--</td>
@@ -299,13 +296,13 @@
                 </tr>
 				<tr>
                   <td>Width</td>
-                  <td>6.5"</td>
-                  <td>6.5"</td>
+                  <td>20"</td>
+                  <td>18"</td>
                 </tr>
 				<tr>
                   <td>Weight</td>
-                  <td>0.5kg</td>
-                  <td>0.5kg</td>
+                  <td>1.5kg</td>
+                  <td>1.0kg</td>
                 </tr>
               </tbody>
             </table>		

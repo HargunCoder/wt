@@ -30,78 +30,76 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
 	<style type="text/css" id="enject"></style>
+		<link rel="stylesheet" type="text/css" href="mystyling.css">
+		<script src="https://use.fontawesome.com/3a82a51b6b.js"></script>
   </head>
 <body>
-<div id="header">
-<div class="container">
-<div id="welcomeLine" class="row">
-	<div class="span6">Welcome!<strong> User</strong></div>
-	<div class="span6">
-	<div class="pull-right">
-		<a href="product_summary.html"><span class="">Fr</span></a>
-		<a href="product_summary.html"><span class="">Es</span></a>
-		<span class="btn btn-mini">En</span>
-		<a href="product_summary.html"><span>&pound;</span></a>
-		<span class="btn btn-mini">$155.00</span>
-		<a href="product_summary.html"><span class="">$</span></a>
-		<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Itemes in your cart </span> </a> 
-	</div>
-	</div>
-</div>
+
 <!-- Navbar ================================================== -->
 <div id="logoArea" class="navbar">
-<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-</a>
-  <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
-		<form class="form-inline navbar-search" method="post" action="products.html" >
-		<input id="srchFld" class="srchTxt" type="text" />
-		  <select class="srchTxt">
-			<option>All</option>
-			<option>CLOTHES </option>
-			<option>FOOD AND BEVERAGES </option>
-			<option>HEALTH & BEAUTY </option>
-			<option>SPORTS & LEISURE </option>
-			<option>BOOKS & ENTERTAINMENTS </option>
-		</select> 
-		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
-    </form>
-    <ul id="topMenu" class="nav pull-right">
-	 <li class=""><a href="special_offer.html">Specials Offer</a></li>
-	 <li class=""><a href="normal.html">Delivery</a></li>
-	 <li class=""><a href="contact.html">Contact</a></li>
-	 <li class="">
-	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
-	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3>Login Block</h3>
-		  </div>
-		  <div class="modal-body">
-			<form class="form-horizontal loginFrm">
-			  <div class="control-group">								
-				<input type="text" id="inputEmail" placeholder="Email">
-			  </div>
-			  <div class="control-group">
-				<input type="password" id="inputPassword" placeholder="Password">
-			  </div>
-			  <div class="control-group">
-				<label class="checkbox">
-				<input type="checkbox"> Remember me
-				</label>
-			  </div>
-			</form>		
-			<button type="submit" class="btn btn-success">Sign in</button>
-			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		  </div>
+			<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div class="navbar-inner navbar-fixed-top">
+				<a class="brand" href="index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  ComputaMart</a>
+				<ul id="topMenu" class="nav pull-left">
+					<li class=""><a href="special_offer.html">Specials Offers</a></li>
+					<li class=""><a href="normal.html">Testimonials</a></li>
+					<li class=""><a href="contact.html">Contact Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Desktops</a></li>
+							<li><a href="#">Laptops</a></li>
+							<li><a href="#">Custom PC</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Storage Devices</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">More Items</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="topMenu" class="nav pull-right">
+
+					<li>
+						<a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
+						<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3>Login Block</h3>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal loginFrm">
+									<div class="control-group">								
+										<input type="text" id="inputEmail" placeholder="Email">
+									</div>
+									<div class="control-group">
+										<input type="password" id="inputPassword" placeholder="Password">
+									</div>
+									<div class="control-group">
+										<label class="checkbox">
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</form>		
+								<button type="submit" class="btn btn-success">Sign in</button>
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+							</div>
+						</div>
+					</li>
+					<li>
+
+						<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Your Cart</span> </a> 
+
+					</li>
+					>
+				</ul>
+			</ul>
+
+		</div>
 	</div>
-	</li>
-    </ul>
-  </div>
-</div>
 </div>
 </div>
 <!-- Header End====================================================================== -->
@@ -113,39 +111,68 @@
 	<div class="accordion-group">
 	  <div class="accordion-heading">
 		<h4><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		  Collapsible Group Item #1
+		  How can I modify my order after having placed it?
 		</a></h4>
 	  </div>
 	  <div id="collapseOne" class="accordion-body collapse"  >
 		<div class="accordion-inner">
-			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-			<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum varius dapibus. Sed hendrerit porta felis at sollicitudin. Sed at nunc ac neque semper fermentum. Proin diam sem, semper fermentum eleifend nec, viverra ac est. Sed ultricies, lectus et vehicula imperdiet, felis tortor vehicula turpis, non fermentum enim est et sapien. Nam justo mi, dignissim a euismod ut, pretium sed leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In viverra porta est, consequat elementum metus tristique a. Mauris tempus tellus a metus dapibus faucibus egestas lectus consectetur. Integer libero dolor, luctus non congue vitae, tempus ut neque. Nunc eleifend lorem quis diam pharetra sagittis. Aliquam ut dolor dui. Fusce dictum facilisis ipsum eu porttitor. In ultricies rhoncus tortor vitae tincidunt.
-			<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum varius dapibus. Sed hendrerit porta felis at sollicitudin. Sed at nunc ac neque semper fermentum. Proin diam sem, semper fermentum eleifend nec, viverra ac est. Sed ultricies, lectus et vehicula imperdiet, felis tortor vehicula turpis, non fermentum enim est et sapien. Nam justo mi, dignissim a euismod ut, pretium sed leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In viverra porta est, consequat elementum metus tristique a. Mauris tempus tellus a metus dapibus faucibus egestas lectus consectetur. Integer libero dolor, luctus non congue vitae, tempus ut neque. Nunc eleifend lorem quis diam pharetra sagittis. Aliquam ut dolor dui. Fusce dictum facilisis ipsum eu porttitor. In ultricies rhoncus tortor vitae tincidunt.
+			How do I place an order?
+ADD/ REMOVE A PRODUCT
 
+Unfortunately, after you have placed an order, you won't be able to add or remove a product to/from your order. But you can place a new order for the desired products. 
+
+CHANGE ADDRESS
+
+Once you have placed your order, you cannot change the delivery address/phone number / Email id . However, you may cancel your order and place a new one with the preferred address/phone number / Email id
+
+Please note: An order shall be delivered at a single address only. We do not accept requests for delivering at multiple locations in a single order. We request you to place separate orders for separate locations.
+
+CHANGE DELIVERY DATE
+
+We try to deliver all your orders in the earliest time possible. However, if you want delivery at a later date, please coordinate with the courier person once he gets in touch with you.
 		</div>
 	  </div>
 	</div>
 	<div class="accordion-group">
 	  <div class="accordion-heading">
 		<h4><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		  Collapsible Group Item #2
+		   What is EMI payment option?
 		</a></h4>
 	  </div>
 	  <div id="collapseTwo" class="accordion-body collapse"  >
 		<div class="accordion-inner">
-		  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		  What is EMI payment option?
+EMI is a payment option which allows you to pay for the order in easy monthly installments. So if you are running out of money then you need not to worry, you can still enjoy a Enhanced Shopping Experience with us. The EMI Option is available only on credit cards issued by following banks:
+
+SBI
+Axis
+HDFC
+HSBC
+ICICI
+IndusInd
+Kotak
+RBL
+Standard Chartered
+Yes Bank
+ 
+
+The credit card issuing bank charges interest per EMI transaction. The interest rates are decided by the bank and are displayed during the payment process. No processing or convenience fee is charged on EMI transactions.
 		</div>
 	  </div>
 	</div>
 	<div class="accordion-group">
 	  <div class="accordion-heading">
 		<h4><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-		  Collapsible Group Item #3
+		 I was not home when the courier person tried to deliver the order. How can I get my order now?
 		</a></h4>
 	  </div>
 	  <div id="collapseThree" class="accordion-body collapse"  >
 		<div class="accordion-inner">
-		  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+The field executive will make no less than 3 attempts to deliver your order at your address. If you wish the order to be delivered at a preferred time or at a later date, please coordinate the same with the field executive/ courier person, when he gets in touch with you.
+
+ 
+
+P.S- If we fail to deliver your order after 3 attempts, the product(s) will return back to us and your order will automatically get cancelled.Refund, if applicable will then be initiated within 4-5 business days.
 		</div>
 	  </div>
 	</div>
@@ -153,12 +180,22 @@
 	<div class="accordion-group">
 	  <div class="accordion-heading">
 		<h4><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-		  Collapsible Group Item #4
+		  How do I track my Order?
 		</a></h4>
 	  </div>
 	  <div id="collapseFour" class="accordion-body collapse"  >
 		<div class="accordion-inner">
-		  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		 To keep a track of your order, use our Track Order facility on the top right side of our home page.
+
+
+
+Track order via SMS-
+
+Send OS(space)(last five digits of your order number) to 9949933333.
+
+Example: OS 12345 where 12345 are the last 5 digits of your order number. 
+
+You can also refer to the email and SMS sent by us to track the movement of your order.
 		</div>
 	  </div>
 	</div>
@@ -166,12 +203,22 @@
 	<div class="accordion-group">
 	  <div class="accordion-heading">
 		<h4><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-		  Collapsible Group Item #5
+		  How do I return a product?
 		</a></h4>
 	  </div>
 	  <div id="collapseFive" class="accordion-body collapse"  >
 		<div class="accordion-inner">
-		  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		 How do I return a product?
+In the rare case that you are unsatisfied with a product in your order, you can raise a return request with us on our website or on our mobile app. 
+
+To return a product in your order, just follow the simple steps below: 
+1. Sign In- Sign in with your registered email ID or social ID (facebook or google+)
+2. Select My Order-  Select My order from Jabong Hi, Customer Drop down list.
+3. Click on Order Details- Click on Order details against the order you wish to return partially or fully.
+4. Click on Return- Click Return against the product you wish to return.
+
+
+Just follow the simple steps that are displayed in the dialogue box and a return request will be raised.
 		</div>
 	  </div>
 	</div>
@@ -179,12 +226,12 @@
 	<div class="accordion-group">
 	  <div class="accordion-heading">
 		<h4><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
-		  Collapsible Group Item #6
+		 Do I need to type my address everytime I order?
 		</a></h4>
 	  </div>
 	  <div id="collapseSix" class="accordion-body collapse"  >
 		<div class="accordion-inner">
-		  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		 No! You don't need to type the address every time you place an order, and we dont forget our customers! An address once used will be saved in My Account -> saved addresses link.  You can go to your saved addresses and modify your default Shipping (delivery) address and Billing address.You can also add more addresses using 'Add a new address' button. You can select any of the addresses instead of typing the shipping address while you are ordering.
 		</div>
 	  </div>
 	</div>
