@@ -50,58 +50,69 @@
 </div>
 <!-- Navbar ================================================== -->
 <div id="logoArea" class="navbar">
-<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-</a>
-  <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
-		<form class="form-inline navbar-search" method="post" action="products.html" >
-		<input id="srchFld" class="srchTxt" type="text" />
-		  <select class="srchTxt">
-			<option>All</option>
-			<option>CLOTHES </option>
-			<option>FOOD AND BEVERAGES </option>
-			<option>HEALTH & BEAUTY </option>
-			<option>SPORTS & LEISURE </option>
-			<option>BOOKS & ENTERTAINMENTS </option>
-		</select> 
-		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
-    </form>
-    <ul id="topMenu" class="nav pull-right">
-	 <li class=""><a href="special_offer.html">Specials Offer</a></li>
-	 <li class=""><a href="normal.html">Delivery</a></li>
-	 <li class=""><a href="contact.html">Contact</a></li>
-	 <li class="">
-	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
-	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3>Login Block</h3>
-		  </div>
-		  <div class="modal-body">
-			<form class="form-horizontal loginFrm">
-			  <div class="control-group">								
-				<input type="text" id="inputEmail" placeholder="Email">
-			  </div>
-			  <div class="control-group">
-				<input type="password" id="inputPassword" placeholder="Password">
-			  </div>
-			  <div class="control-group">
-				<label class="checkbox">
-				<input type="checkbox"> Remember me
-				</label>
-			  </div>
-			</form>		
-			<button type="submit" class="btn btn-success">Sign in</button>
-			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		  </div>
+			<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div class="navbar-inner navbar-fixed-top">
+				<a class="brand" href="index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  ComputaMart</a>
+				<ul id="topMenu" class="nav pull-left">
+					<li class=""><a href="special_offer.html">Specials Offers</a></li>
+					<li class=""><a href="normal.html">Testimonials</a></li>
+					<li class=""><a href="contact.html">Contact Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Desktops</a></li>
+							<li><a href="#">Laptops</a></li>
+							<li><a href="#">Custom PC</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Storage Devices</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">More Items</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="topMenu" class="nav pull-right">
+
+					<li>
+						<a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
+						<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3>Login Block</h3>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal loginFrm">
+									<div class="control-group">								
+										<input type="text" id="inputEmail" placeholder="Email">
+									</div>
+									<div class="control-group">
+										<input type="password" id="inputPassword" placeholder="Password">
+									</div>
+									<div class="control-group">
+										<label class="checkbox">
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</form>		
+								<button type="submit" class="btn btn-success">Sign in</button>
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+							</div>
+						</div>
+					</li>
+					<li>
+
+						<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Your Cart</span> </a> 
+
+					</li>
+					>
+				</ul>
+			</ul>
+
+		</div>
 	</div>
-	</li>
-    </ul>
-  </div>
-</div>
 </div>
 </div>
 <!-- Header End====================================================================== -->
@@ -110,65 +121,78 @@
 	<div class="row">
 <!-- Sidebar ================================================== -->
 	<div id="sidebar" class="span3">
-		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="themes/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
-		<ul id="sideManu" class="nav nav-tabs nav-stacked">
-			<li class="subMenu open"><a> ELECTRONICS [230]</a>
-				<ul>
-				<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+
+				<ul id="sideManu" class="nav nav-tabs nav-stacked">
+					<li class="subMenu open"><a> Desktops [40]</a>
+						<ul>
+							<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+						</ul>
+					</li>
+					<li class="subMenu"><a> Laptops [50] </a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A9-9410  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-8700P  (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A10-9600P(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AMD A12-9700P  (45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-6100U(6)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i3-7100U  (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Intel Core i5-6200U  (3)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Storage Devices [100]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Punch card(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Floppy diskette(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Zip disk (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>CD(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>DVD (8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Blu-ray disc (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Flash jump drive (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Hard drive / SSD (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Keyboards And Mouse [30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTY(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>AZERTY(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>QWERTZ (5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>HCESAR(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Mouse(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>GStick Mouse (5)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Optical Mouse (3)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Trackball Mouse (11)</a></li>												
+						</ul>
+					</li>
+					<li class="subMenu"><a>Speakers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Full-range drivers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subwoofer(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Woofer(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Mid-range driver(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Tweeter(8)</a></li>												
+																		
+						</ul>
+					</li>
+					<li class="subMenu"><a>Routers[30]</a>
+						<ul style="display:none">
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Broadband Routers(35)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Wireless Routers(8)</a></li>												
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Edge Router(5)</a></li>	
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Subscriber Edge Router(45)</a></li>
+							<li><a href="products.html"><i class="icon-chevron-right"></i>Core Router(8)</a></li>												
+																		
+						</ul>
+					</li>
+					
 				</ul>
-			</li>
-			<li class="subMenu"><a> CLOTHES [840] </a>
-			<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Clothing (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Shoes (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Hand Bags (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Clothings  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Shoes (6)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Clothing (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Shoes (3)</a></li>												
-			</ul>
-			</li>
-			<li class="subMenu"><a>FOOD AND BEVERAGES [1000]</a>
-				<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Angoves  (35)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Bouchard Aine & Fils (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>French Rabbit (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Louis Bernard  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>BIB Wine (Bag in Box) (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Other Liquors & Wine (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Garden (3)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Khao Shong (11)</a></li>												
-			</ul>
-			</li>
-			<li><a href="products.html">HEALTH & BEAUTY [18]</a></li>
-			<li><a href="products.html">SPORTS & LEISURE [58]</a></li>
-			<li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
-		</ul>
-		<br/>
-		  <div class="thumbnail">
-			<img src="themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
-			<div class="caption">
-			  <h5>Panasonic</h5>
-				<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+				<br/>
+				<br/>
+
+
 			</div>
-		  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
-				<div class="caption">
-				  <h5>Kindle</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
-				</div>
-			  </div><br/>
-			<div class="thumbnail">
-				<img src="themes/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
-				<div class="caption">
-				  <h5>Payment Methods</h5>
-				</div>
-			  </div>
-	</div>
 <!-- Sidebar end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
@@ -178,20 +202,13 @@
     </ul>	
 	<div class="row">	  
 			<div id="gallery" class="span3">
-            <a href="themes/images/products/large/f1.jpg" title="Fujifilm FinePix S2950 Digital Camera">
-				<img src="themes/images/products/large/3.jpg" style="width:100%" alt="Fujifilm FinePix S2950 Digital Camera"/>
+            <a href="dwn4.jpg" title="AMD - A4 4020 Processor 3.6 ghz, 16" LED Monitor, 2 GB Onboard Graphics, 2 GB  Ram, 320 GB Hard Disk ">
+				<img src="dwn4.jpg" style="width:100%" alt="AMD - A4 4020 Processor 3.6 ghz, 16" LED Monitor, 2 GB Onboard Graphics, 2 GB  Ram, 320 GB Hard Disk"/>
             </a>
 			<div id="differentview" class="moreOptopm carousel slide">
                 <div class="carousel-inner">
-                  <div class="item active">
-                   <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt=""/></a>
-                   <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt=""/></a>
-                   <a href="themes/images/products/large/f3.jpg" > <img style="width:29%" src="themes/images/products/large/f3.jpg" alt=""/></a>
-                  </div>
-                  <div class="item">
-                   <a href="themes/images/products/large/f3.jpg" > <img style="width:29%" src="themes/images/products/large/f3.jpg" alt=""/></a>
-                   <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt=""/></a>
-                   <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt=""/></a>
+                 <div class="item active">
+                   
                   </div>
                 </div>
               <!--  
@@ -212,8 +229,8 @@
 			</div>
 			</div>
 			<div class="span6">
-				<h3>Fujifilm FinePix S2950 Digital Camera  </h3>
-				<small>- (14MP, 18x Optical Zoom) 3-inch LCD</small>
+				<h3>AMD - A4 4020 Processor 3.6 ghz, 16" LED Monitor, 2 GB Onboard Graphics, 2 GB  Ram, 320 GB Hard Disk  </h3>
+				
 				<hr class="soft"/>
 				<form class="form-horizontal qtyFrm">
 				  <div class="control-group">
@@ -242,10 +259,12 @@
 				</form>
 				<hr class="soft clr"/>
 				<p>
-				14 Megapixels. 18.0 x Optical Zoom. 3.0-inch LCD Screen. Full HD photos and 1280 x 720p HD movie capture. ISO sensitivity ISO6400 at reduced resolution. 
-				Tracking Auto Focus. Motion Panorama Mode. Face Detection technology with Blink detection and Smile and shoot mode. 4 x AA batteries not included. WxDxH 110.2 ×81.4x73.4mm. 
-				Weight 0.341kg (excluding battery and memory card). Weight 0.437kg (including battery and memory card).
-				
+					Highlights:
+
+For Desktop<br>
+Hexa-Core<br>
+AM3+<br>
+Clock Speed: 3.5 GHz
 				</p>
 				<a class="btn btn-small pull-right" href="#detail">More Details</a>
 				<br class="clr"/>
@@ -264,38 +283,39 @@
                 <table class="table table-bordered">
 				<tbody>
 				<tr class="techSpecRow"><th colspan="2">Product Details</th></tr>
-				<tr class="techSpecRow"><td class="techSpecTD1">Brand: </td><td class="techSpecTD2">Fujifilm</td></tr>
-				<tr class="techSpecRow"><td class="techSpecTD1">Model:</td><td class="techSpecTD2">FinePix S2950HD</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Brand: </td><td class="techSpecTD2">AMD</td></tr>
+				
 				<tr class="techSpecRow"><td class="techSpecTD1">Released on:</td><td class="techSpecTD2"> 2011-01-28</td></tr>
-				<tr class="techSpecRow"><td class="techSpecTD1">Dimensions:</td><td class="techSpecTD2"> 5.50" h x 5.50" w x 2.00" l, .75 pounds</td></tr>
-				<tr class="techSpecRow"><td class="techSpecTD1">Display size:</td><td class="techSpecTD2">3</td></tr>
+				
+				
 				</tbody>
 				</table>
 				
-				<h5>Features</h5>
+				<h5>General</h5>
 				<p>
-				14 Megapixels. 18.0 x Optical Zoom. 3.0-inch LCD Screen. Full HD photos and 1280 x 720p HD movie capture. ISO sensitivity ISO6400 at reduced resolution. Tracking Auto Focus. Motion Panorama Mode. Face Detection technology with Blink detection and Smile and shoot mode. 4 x AA batteries not included. WxDxH 110.2 ×81.4x73.4mm. Weight 0.341kg (excluding battery and memory card). Weight 0.437kg (including battery and memory card).<br/>
-				OND363338
+		The AMD FX-6300 6-Core Processor is designed to speed up your system for a power-filled performance while you run heavy applications that use advanced graphics.
+
+AMD processors are loaded with high-end features and advanced technologies which promise a power-packed performance for your computer. Boost your computer with an AMD processor and feel the difference as you work.
 				</p>
 
-				<h4>Editorial Reviews</h4>
-				<h5>Manufacturer's Description </h5>
+				<h5>Performance Features </h5>
 				<p>
-				With a generous 18x Fujinon optical zoom lens, the S2950 really packs a punch, especially when matched with its 14 megapixel sensor, large 3.0" LCD screen and 720p HD (30fps) movie capture.
+	This processor has been made with the AMD Turbo Core technology that is designed to dynamically adjust performance to provide the best experience while you run applications and games with high-end graphics.
 				</p>
 
-				<h5>Electric powered Fujinon 18x zoom lens</h5>
+				<h5>System Memory And Storage Features</h5>
 				<p>
-				The S2950 sports an impressive 28mm – 504mm* high precision Fujinon optical zoom lens. Simple to operate with an electric powered zoom lever, the huge zoom range means that you can capture all the detail, even when you're at a considerable distance away. You can even operate the zoom during video shooting. Unlike a bulky D-SLR, bridge cameras allow you great versatility of zoom, without the hassle of carrying a bag of lenses.
-				</p>
-				<h5>Impressive panoramas</h5>
-				<p>
-				With its easy to use Panoramic shooting mode you can get creative on the S2950, however basic your skills, and rest assured that you will not risk shooting uneven landscapes or shaky horizons. The camera enables you to take three successive shots with a helpful tool which automatically releases the shutter once the images are fully aligned to seamlessly stitch the shots together in-camera. It's so easy and the results are impressive.
+	The processor has a high-bandwidth, low-latency integrated memory controller. It supports up to DDR3-1866 with 1 DPC (DIMM per Channel) in single memory slot motherboard designs. It also supports low voltage memories of 1.35 V and 1.2 V. It has a memory bandwidth of up to 29.9 GB per second for DDR3. It also has pre-fetcher improvements.
 				</p>
 
-				<h5>Sharp, clear shots</h5>
+				</p>
+
+				<h5>Warranty</h5>
 				<p>
-				Even at the longest zoom settings or in the most challenging of lighting conditions, the S2950 is able to produce crisp, clean results. With its mechanically stabilised 1/2 3", 14 megapixel CCD sensor, and high ISO sensitivity settings, Fujifilm's Dual Image Stabilisation technology combines to reduce the blurring effects of both hand-shake and subject movement to provide superb pictures.
+					Warranty Summary:1 Year Carry in Warranty<br>
+Service Type:Carry In<br>
+Covered in Warranty:All Parts of The Product<br>
+Not Covered in Warranty:All Parts are Covered in Warranty
 				</p>
               </div>
 		<div class="tab-pane fade" id="profile">
@@ -485,75 +505,54 @@
 		</div>
 			<div class="tab-pane active" id="blockView">
 				<ul class="thumbnails">
+					
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="themes/images/products/10.jpg" alt=""/></a>
+						<a href="product_details2.html"><img src="dwn2.jpg" alt=""/></a>
 						<div class="caption">
-						  <h5>Manicure &amp; Pedicure</h5>
-						  <p> 
-							Lorem Ipsum is simply dummy text. 
-						  </p>
-						  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+						  <h5>Intel® Pentium Dual Core Processor Sixth Generation, 16" LED Monitor, 4 GB Ram, HDD 320 GB</h5>
+						  
+						  <h4 style="text-align:center"><a class="btn" href="product_details2.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
 						</div>
 					  </div>
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="themes/images/products/11.jpg" alt=""/></a>
+						<a href="product_details3.html"><img src="dwn4.jpg" alt=""/></a>
 						<div class="caption">
-						  <h5>Manicure &amp; Pedicure</h5>
-						  <p> 
-							Lorem Ipsum is simply dummy text. 
-						  </p>
-						  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+						  <h5>AMD - A4 4020 Processor 3.6 ghz, 16" LED Monitor, 2 GB Onboard Graphics, 2 GB  Ram, 320 GB Hard Disk</h5>
+						 
+						   <h4 style="text-align:center"><a class="btn" href="product_details3.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
 						</div>
 					  </div>
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="themes/images/products/12.jpg" alt=""/></a>
+						<a href="product_details4.html"><img src="dwn5.jpg" alt=""/></a>
 						<div class="caption">
-						  <h5>Manicure &amp; Pedicure</h5>
-						  <p> 
-							Lorem Ipsum is simply dummy text. 
-						  </p>
-						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+						  <h5>AMD A4 6320 Processor (2 Cores Processor),16" LED Monitor,1 GB Onboard Graphics, 2 GB RAM, HDD 320 GB</h5>
+						  
+						   <h4 style="text-align:center"><a class="btn" href="product_details4.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
 						</div>
 					  </div>
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="themes/images/products/13.jpg" alt=""/></a>
+						<a href="product_details5.html"><img src="dwn6.jpg" alt=""/></a>
 						<div class="caption">
-						  <h5>Manicure &amp; Pedicure</h5>
-						  <p> 
-							Lorem Ipsum is simply dummy text. 
-						  </p>
-						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+						  <h5>AMD 3850 1.3 GHz New Processor (4 Cores Processor),16" LED Monitor,1 GB Onboard Graphics, 2 GB RAM, HDD 320 GB</h5>
+						 
+						   <h4 style="text-align:center"><a class="btn" href="product_details5.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
 						</div>
 					  </div>
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="themes/images/products/1.jpg" alt=""/></a>
+						<a href="product_details6.html"><img src="dwn7.jpg" alt=""/></a>
 						<div class="caption">
-						  <h5>Manicure &amp; Pedicure</h5>
-						  <p> 
-							Lorem Ipsum is simply dummy text. 
-						  </p>
-						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
-						</div>
-					  </div>
-					</li>
-					<li class="span3">
-					  <div class="thumbnail">
-						<a href="product_details.html"><img src="themes/images/products/2.jpg" alt=""/></a>
-						<div class="caption">
-						  <h5>Manicure &amp; Pedicure</h5>
-						  <p> 
-							Lorem Ipsum is simply dummy text. 
-						  </p>
-						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+						  <h5>Intel core I3 Processor H55 Motherboard ,15"  LCD Monitor, 2 GB Ram, HDD 160 GB</h5>
+						 
+						   <h4 style="text-align:center"><a class="btn" href="product_details6.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
 						</div>
 					  </div>
 					</li>
